@@ -1,23 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<style>
+  
+  #box {
+   
+  }
+
+  .box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+  }
+
+  .box--green{
+    margin-bottom: 20px;
+    background: green;
+  }
+
+  .box--blue {
+    background: blue;
+  }
+
+
+  button{
+    width: 100px;
+    margin-top: 20px;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+  }
+
+  .container {
+    display: flex;
+  }
+  .bigbox{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    display: inline-block;
+  }
+
+  
+
+</style>
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <script src="script.js"></script>
+
+</head>
+
+<body id="body">
+
+  div .box {
+
+  }
+  <section>
+    <div id="box" class="box box--green"></div>
+    <div id="box" class="box box--green"></div>
+    <div class="box box--blue box--wide"></div>
+    <div class="box--blue box--wide"></div>
+
+    
+    <div class="box">
+      <div class="box--blue"></div>
+      <div class="box"></div>
+    </div>
+
+
+    <span class="btn-group">
+
+      <!-- inline javascript -->
+      <button onclick="document.querySelector('#box').style.width='500px'">+</button>
+      <button onclick="document.querySelector('#box').style.width='200px'">-</button>
+    </span>
+    </section>
+
+
+    <!-- script tag in html -->
+    <script>
+      function turnBlack(){
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+       
+
+
+      }
+      // Call or Invoke function
+      turnBlack();
+    </script>
+</body>
 </html>
