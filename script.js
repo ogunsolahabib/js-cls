@@ -66,7 +66,7 @@ let name = "Mustapha", age = 25, isStudent = true;
 // }
 
 
-
+// Class task: create a bio from a person object
 function myBio(obj) {
   // "Mustapha is 25 years old and he is a student. He loves reading, coding, and gaming."
   console.log(obj.name + " is " + obj.age + " years old and he is" + (obj.isStudent ? " a student " : " not a student.") + " He loves " + obj.hobbies + ".");
